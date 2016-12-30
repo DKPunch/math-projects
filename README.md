@@ -6,4 +6,4 @@ The motivation for starting Project Euler, and its continuation, is to provide a
 
 https://projecteuler.net/
 
-Out of respect for what this website and its creators stand for, I have made all of my completed projects private.
+During my free time I like to attempt to solve a lot of these problems from Project Euler and have decided to upload some of my favorite completed projects. But, out of respect for what this website and its creators stand for, I have made all of my completed projects private.
