@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 
 int main() {
     int count = 0; 
@@ -19,7 +19,7 @@ int main() {
         if (prime == true) {
             count++;
         }
-        if (count!=limit){
+        if (count != limit){
             num++;
         }
     }
