@@ -1,24 +1,26 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    int result = 0, num, pal, prod;
-    
-	for (int i = 100; i < 1000; i++) {
-		for (int j = 100; j < 1000; j++) { 
-		    pal = 0;
-           	num = i * j;
-           	prod = num;
-           	while (prod != 0) {
-               	pal = pal * 10 + prod % 10;
-               	prod /= 10;
-           	}
-           	if (pal == num) {
-               	if (num > result) {
-               		result = num;
-               	}
-            }
+	int value[21];
+	int prod = 1;
+		
+	for (int i = 1; i < 21; i++) {
+		value[i] = i;
+	}
+
+	for (int i = 3; i < 21; i++) {
+		for (int j = 2; j < i; j++) {
+			if (value[i] % value[j] == 0) {
+				value[i] /= value[j];
+			}
 		}
 	}
-	std::cout << "The largest palindrome made from the "
-		<< "product of two 3-digit numbers is: " << result << ".\n";
+
+	for (int i = 1; i < 21; i++) {
+		prod *= value[i];
+	}
+	
+	cout << prod << endl;
 }
